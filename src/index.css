@@ -1,0 +1,9 @@
+:root{
+  --body-color : #fff;
+  --webname-color : #000;
+  --icon-background-color : #bdbbbb;
+}
+
+body{
+  background-color: var(--body-color);
+}
