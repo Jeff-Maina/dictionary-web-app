@@ -96,7 +96,7 @@ font-size: 1.2rem;
 
 
 li span{
-    color: var(--webname-color);
+    color: var(--definition-color);
     font-size: 1rem;
     font-family: PTserif;
     max-width: 400px;
@@ -133,8 +133,104 @@ color: blueviolet;
 .span hr{
     justify-self: flex-end;
     /* position: absolute; */
-    background-color: rgb(210, 210, 210);
+    background-color:var(--line-color);
     border: none;
     height: .1px;
     width: 85%;
 }
+
+#loader{
+    height: 5em;
+    width: 5em;
+    /* background-color: red; */
+    position: relative;
+    top: 50%;
+    left: 48%;
+}
+
+.loaderball {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0.3em;
+  }
+
+  #ball1 {
+    background-color: red;
+    position: absolute;
+    top: 3em;
+    left: 2em;
+    animation: ball1 2s forwards infinite ;
+  }
+  #ball2 {
+    background-color: cadetblue;
+    position: absolute;
+    animation: ball2 2s forwards infinite;
+  }
+  #ball3 {
+    background-color: coral;
+    position: absolute;
+    top: 3em;
+    left: -2em;
+    animation: ball3 2s forwards infinite;
+  }
+
+  @keyframes ball1 {
+    0% {
+      top: 3em;
+      left: 2em;
+    }
+    33.3% {
+      top: 0em;
+      left: 0em;
+    }
+    66.6%{
+        top: 3em;
+        left: -2em;
+    }
+   100%{
+    top: 3em;
+    left: 2em;
+   }
+  }
+
+  @keyframes ball2 {
+      0% {
+          top: 0;
+          left: 0;
+        }
+      33.3% {
+          top: 3em;
+          left: -2em;
+        }
+      66.6%{
+          top: 3em;
+          left: 2em;
+      }
+      100%{
+          top: 0;
+          left: 0;
+      }
+  }
+
+
+  @keyframes ball3 {
+      0% {
+          top: 3em;
+          left: -2em;
+        }
+      33.3% {
+          top: 3em;
+          left: 2em;
+        }
+      66.6%{
+          top: 0em;
+          left: 0em;
+      }
+      100%{
+          top: 3em;
+          left: -2em;
+      }
+  }
