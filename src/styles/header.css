@@ -26,6 +26,31 @@ header{
     /* background-color: aqua; */
 }
 
+.input{
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    margin-top: .5em;
+    position: relative;
+}
+
+.input input{
+    background-color:var(--input-background-color);
+    border-radius: 10px;
+    border: none;
+    /* height: 4em; */
+    width: 98%;
+    box-sizing: border-box;
+    color: var(--input-text-color);
+    padding: 0.7em;
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+
+.input input:focus{
+outline: none;
+}
+
 /* typography */
 h1{
     color: var(--webname-color);
@@ -43,5 +68,17 @@ h1 span{
     border-radius: 50%;
     padding: .3em;
     position: absolute;
-    right: .5em;
+    right: 3%;
 }
+
+.input i{
+  cursor: pointer;
+  color: blueviolet;
+  position: absolute;
+  font-size: 1.9rem;
+  background-color: var(--input-background-color);
+  right: 3%;
+  font-weight: 200;
+  top: 15px;
+}
+

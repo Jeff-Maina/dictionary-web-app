@@ -1,7 +1,9 @@
 :root{
   --body-color : #fff;
-  --webname-color : #000;
+  --webname-color : #2e2e2e;
   --icon-background-color : #bdbbbb;
+  --input-background-color : #eeeeee;
+  --input-text-color : #000;
 }
 
 body{
