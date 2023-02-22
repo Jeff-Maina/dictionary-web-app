@@ -29,6 +29,7 @@ function set(){
             root.style.setProperty('--input-text-color', '#000')
             root.style.setProperty('--line-color', '#d2d2d2')
             root.style.setProperty('--definition-color', '#2e2e2e')
+            root.style.setProperty('--error-message-color', '#bfbebe')
         }
         else{
             setIsDark(true)
@@ -40,6 +41,7 @@ function set(){
             root.style.setProperty('--input-text-color', '#777678')
             root.style.setProperty('--line-color', '#3d3d3d')
             root.style.setProperty('--definition-color', '#9d9c9c')
+            root.style.setProperty('--error-message-color', '#362e2e')
         }
     }
 

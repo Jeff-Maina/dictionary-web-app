@@ -7,13 +7,20 @@ function App() {
 let[word,setWord] = useState("")
 let [isPending,setPending] = useState(true)
 let [wordData,setWordData] = useState([])
+let [isAvailable,setAvailable] = useState(true)
 
   useEffect(()=>{
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
     .then(resp => resp.json())
     .then((data) =>{
+      if (data.length != undefined) {
       setWordData(data)
-      setPending(false)
+      setPending(false)}
+      else{
+        setAvailable(false)
+        setPending(true)
+        console.log("Error")
+      }
       // console.log(data)
     })
   },[word])
@@ -23,7 +30,7 @@ let [wordData,setWordData] = useState([])
   return (
     <div className="App">
       <Header setWord = {setWord}/>
-      <Body isPending = {isPending} wordData = {wordData}/>
+      <Body word = {word} isAvailable = {isAvailable} isPending = {isPending} wordData = {wordData}/>
     </div>
   );
 }

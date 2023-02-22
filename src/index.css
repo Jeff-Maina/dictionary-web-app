@@ -6,7 +6,9 @@
   --input-text-color : #000;
   --line-color:#d2d2d2;
   --definition-color : #2e2e2e;
+  --error-message-color : #362e2e;
 }
+
 
 body{
   background-color: var(--body-color);
