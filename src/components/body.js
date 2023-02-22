@@ -75,7 +75,7 @@ function Body({ word, wordData, isPending, isAvailable }) {
 let synonyms_list = definitions_arr.map((word) => {
   return word.synonyms.map((def) => {
   return (
-    <h2>{def}</h2>
+    <li id="SYN">{def}</li>
     )
   });
 })
@@ -134,7 +134,7 @@ let synonyms_list = definitions_arr.map((word) => {
             <h3 id="meaning-title">Meaning</h3>
           </div>
           <ul className="list noun">{words_definitions}</ul>
-          <span id="synonyms-span"><h2>Synonyms:</h2>{synonyms_list}</span>
+          <ul id="synonyms-span"><h2>Synonyms:</h2>{synonyms_list}</ul>
         </section>
       )}
     </main>
